@@ -1,0 +1,17 @@
+c:\users\alejandro\documents\visual studio 2017\Projects\Ferreteria\Ferreteria\bin\Debug\Ferreteria.exe.config
+c:\users\alejandro\documents\visual studio 2017\Projects\Ferreteria\Ferreteria\bin\Debug\Ferreteria.exe
+c:\users\alejandro\documents\visual studio 2017\Projects\Ferreteria\Ferreteria\bin\Debug\Ferreteria.pdb
+c:\users\alejandro\documents\visual studio 2017\Projects\Ferreteria\Ferreteria\obj\Debug\Ferreteria.Form1.resources
+c:\users\alejandro\documents\visual studio 2017\Projects\Ferreteria\Ferreteria\obj\Debug\Ferreteria.Properties.Resources.resources
+c:\users\alejandro\documents\visual studio 2017\Projects\Ferreteria\Ferreteria\obj\Debug\Ferreteria.csproj.GenerateResource.Cache
+c:\users\alejandro\documents\visual studio 2017\Projects\Ferreteria\Ferreteria\obj\Debug\Ferreteria.exe
+c:\users\alejandro\documents\visual studio 2017\Projects\Ferreteria\Ferreteria\obj\Debug\Ferreteria.pdb
+c:\users\alejandro\documents\visual studio 2017\Projects\Ferreteria\Ferreteria\obj\Debug\Ferreteria.INVITADO.resources
+c:\users\alejandro\documents\visual studio 2017\Projects\Ferreteria\Ferreteria\obj\Debug\Ferreteria.admin.resources
+c:\users\alejandro\documents\visual studio 2017\Projects\Ferreteria\Ferreteria\obj\Debug\Ferreteria.agregar.resources
+C:\Users\ALEJANDRO\Documents\Visual Studio 2017\Projects\Ferreteria\Ferreteria\obj\Debug\Ferreteria.editar.resources
+C:\Users\ALEJANDRO\documents\visual studio 2017\Projects\Ferreteria\Ferreteria\obj\Debug\Ferreteria.administrador.clientes.resources
+C:\Users\ALEJANDRO\documents\visual studio 2017\Projects\Ferreteria\Ferreteria\bin\Debug\MySql.Data.xml
+C:\Users\ALEJANDRO\Documents\Visual Studio 2017\Projects\Ferreteria\Ferreteria\obj\Debug\Ferreteria.csproj.CoreCompileInputs.cache
+C:\Users\ALEJANDRO\Documents\Visual Studio 2017\Projects\Ferreteria\Ferreteria\obj\Debug\Ferreteria.csproj.CopyComplete
+C:\Users\ALEJANDRO\Documents\Visual Studio 2017\Projects\Ferreteria\Ferreteria\obj\Debug\Ferreteria.csprojAssemblyReference.cache

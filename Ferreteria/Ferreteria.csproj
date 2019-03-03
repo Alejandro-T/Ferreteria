@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{11B2F8D1-5930-4A19-9BC5-70148142C120}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Ferreteria</RootNamespace>
+    <AssemblyName>Ferreteria</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="administrador\admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="administrador\admin.Designer.cs">
+      <DependentUpon>admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="administrador\agregar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="administrador\agregar.Designer.cs">
+      <DependentUpon>agregar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="administrador\clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="administrador\clientes.Designer.cs">
+      <DependentUpon>clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="administrador\editar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="administrador\editar.Designer.cs">
+      <DependentUpon>editar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="INVITADO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INVITADO.Designer.cs">
+      <DependentUpon>INVITADO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="personasDataSet.cs">
+      <DependentUpon>personasDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="personasDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>personasDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="administrador\admin.resx">
+      <DependentUpon>admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="administrador\agregar.resx">
+      <DependentUpon>agregar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="administrador\clientes.resx">
+      <DependentUpon>clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="administrador\editar.resx">
+      <DependentUpon>editar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INVITADO.resx">
+      <DependentUpon>INVITADO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="personasDataSet.xsc">
+      <DependentUpon>personasDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="personasDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>personasDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="personasDataSet.xss">
+      <DependentUpon>personasDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pie.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shopping Cart_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimalist-wallpaper-14[1].jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cerrar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancel_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\screwdriver-minimalist-wallpaper-dark-blue[1].png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Plus_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancel_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Support_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DeadMouse[1].png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User Groups_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add User Male_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Settings_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search_96px.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
